@@ -1,0 +1,12 @@
+Name: Jamie Knowles 
+Student Number: C00307559
+Date: 03/11/25
+Purpose: Exercise 6 Hashing and Verification
+
+hashit.sh Commands used:
+- chmod +x hashit.sh 
+- ./hashit.sh sha256 /etc/hosts 
+- sha256sum /etc/hosts
+
+Native sha256sum command:
+- sha256sum /etc/hosts 
