@@ -1,0 +1,21 @@
+I would use simple command line tools to automate subnet scanning and reporting.
+For example I would use ping in a loop to see which hosts respond, nmap for quick port 
+and service discovery across ranges, and arp-scan or arp -a to find devices on the local network. 
+I would run these in bash loops such as for i in {1..254}; do ping -c1 192.168.1.$i; done and 
+redirect the output to files, then filter the results with grep, awk or sed to make a readable report.
+
+
+
+To integrate Python into a Bash automation pipeline I would let Bash handle scheduling, file input 
+and output, and calling tools, while Python would handle the heavier parsing or reporting. 
+For example a cron job or bash script could collect raw scan output, 
+then call python3 parse_results.py report.json to parse the data, 
+add timestamps and generate a clear HTML or CSV report. 
+Python is also useful for making web requests or handling JSON data where Bash becomes complicated, 
+so Bash is best for automation and Python for logic and formatting.
+
+
+
+Name: Jamie Knowles
+Student Number: C00307559
+Date: 03/11/2025
